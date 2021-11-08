@@ -2,6 +2,8 @@ set vPath to (choose folder with prompt "Select destination") as string
 
 tell application "Contacts"
 	
+	launch
+	
 	repeat with cardPerson in people
 		
 		set nameOfvCard to name of cardPerson & ".vcf"
